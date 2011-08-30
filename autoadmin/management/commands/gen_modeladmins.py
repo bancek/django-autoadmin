@@ -47,12 +47,12 @@ def uni_fk_tr_10(field_name, order_field=None):
         for part in fnparts[1:]:
             f = getattr(f, part)
         
-        url_name = 'admin:%s_%s_change' % (f._meta.app_label,
+        url_name = 'admin:%%s_%%s_change' %% (f._meta.app_label,
                                               f._meta.module_name)
         
         url = urlresolvers.reverse(url_name, args=(f.pk,))
         name = escape(truncate_words(unicode(f), 10))
-        return u'<a href="%s">%s</a>' % (url, name)
+        return u'<a href="%%s">%%s</a>' %% (url, name)
     
     func.allow_tags = True
     func.short_description = fnparts[-1]
