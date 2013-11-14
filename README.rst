@@ -1,7 +1,7 @@
 Django Autoadmin
 ================
 
-Django Autoadmin is Django application that let's you have quick administration over your Django models. You can even use it to fake Django Auth when your're unable to create auth tables in your legacy database. You can also use AutoDatabrowser.
+Django Autoadmin is Django application that lets you have a quick administration over your Django models. You can even use it to fake Django Auth when your're unable to create auth tables in your legacy database. You can also use AutoDatabrowser.
 
 Installation
 ------------
